@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIVIDUAL SHOW</title>
+</head>
+<body>
+<h2><i>INDIVIDUAL SHOW</i></h2>
+<p>ID:<%= newC._id %></p>
+<div class="chats">
+    <p><%= newC.form %></p>
+    <form method="post" action="/chats/<%= newC._id %>?_method=PUT">
+    <textarea name="msg" id=""><%= newC.msg %></textarea><p></p>
+    <button>Submit</button>
+    </form>
+    <p><%= newC.to %></p>
+
+</div>
+
+
+
+</body>
+</html>
